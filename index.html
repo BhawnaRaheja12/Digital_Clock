@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 200px;
+            margin-left: 220px;
+            background-image:url("bgfi.jpg");  
+             background-repeat: no-repeat;
+            background-size: cover;
+            height: 590px;
+            width: 100%;
+        }
+        h1{
+            font-size: 50px;
+            letter-spacing: 2px;
+            color:white;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin-left: 100px; 
+           
+        }
+        .clock{
+            display: flex;
+            margin-left: 420px;
+        }
+        .clock span{
+            display: flex;
+            font-size: 70px; 
+            background-color:white;
+            color: black;
+           padding-left: 10px;
+        }
+        .clock .text{
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+          
+        }
+        .clock div{
+            margin:5px;
+           align-items:center;
+           width:120px; 
+           
+        }
+        #ampm{
+            width: 120px;
+            height: 95px;
+            padding-top: 8px;
+            background-color:lightblue;
+        }
+          #hours,#minutes,#seconds{
+            background-color:lightblue;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>DIGITAL CLOCK</h1>
+    <div class="clock">
+        <div class="div1">
+        <span id="hours">00</span>
+        <span class="text">Hours</span>
+    </div>
+    <div class="div2">
+        <span id="minutes">00</span>
+        <span class="text">minutes</span>
+    </div>
+    <div class="div3">
+        <span id="seconds">00</span>
+        <span class="text">seconds</span>
+    </div>
+    <div class="div4">
+        <span id="ampm">AM</span>
+    </div> 
+    </div>
+</div> 
+<script src="index.js"></script>
+</body>
+</html>
